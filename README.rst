@@ -29,6 +29,19 @@ Using ``conda``::
 
     conda install -c conda-forge python-crfsuite
 
+Build Install
+=============
+
+On windows non-mingw python you may have trouble installing via pip, follow these steps to build succesfully::
+
+    git clone "https://github.com/scrapinghub/python-crfsuite.git"
+    cd python-crfsuite
+    git clone "https://github.com/chokkan/crfsuite.git"
+    git clone "https://github.com/chokkan/liblbfgs"
+    python setup.py build
+    python setup.py install
+
+
 Usage
 =====
 
